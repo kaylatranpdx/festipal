@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FestiPal: Your Personal Festival Planner</title>
+    <link
+      rel="stylesheet"
+      href="../static/styles.css">
+    <script src="../static/festipal.js"></script>
+  </head>
+  <body>
+    <div class="chat-container">
+      <div id="chat-box">
+        <div class="ai-message">
+          Welcome to FestiPal, your personal festival planner! Type in the
+          festival you're attending and I can help you get started!
+        </div>
+      </div>
+      <input
+        type="text"
+        id="user-input"
+        placeholder="Type a message..."
+        onkeypress="if(event.keyCode==13) sendMessage()"
+      />
+    </div>
+  </body>
+</html>
